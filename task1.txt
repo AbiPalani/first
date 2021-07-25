@@ -1,0 +1,51 @@
+difference between node js and browser js:
+Node JS:
+	1.It executes Js in server side
+	2.In this, everything is a module.We must keep our code inside a module.
+	3.Node processes request object.
+	4.It doesn't have a predefined window object because it doesn't have a window to draw anything.
+	5.Require object is prdefined in node Js, which is used to include modules in the app.
+Browser JS:
+	1.Browser Js executes in client side.
+	2.Module is not mandatory in client side js.
+	3.Browser processes responce object.
+	4.Window is predefined global object, which has functions and attributes, that have to deal with window that has drawn.
+	5.Browser doesn't have require predefined object, we may include it in our own app for asynchronous file loading 
+
+
+Summary points of the video:
+	It shows how the browser render a website
+	 *It takes Parsing, Rendering, Layout and painting, the following shows how the browser render a website:- 
+		1.Parsing the Html and css create a DOM tree and CSSOM tree.
+		2.These DOM tree and CSSOM tree combined and create a Render Tree.
+		3.There are actually four trees in the render part:"RENDER OBJECTS, RENDER STYLES,LAYERS, LINEBOXES".
+		4.Layout computes where a node will be on the screen.
+		5.Paint computes bitmaps and composites to screen.
+		6.Performance Insight for better result.
+
+
+Read:
+	*For file optimization and scannability omitting the tags are allowed.
+	*But it has effects such as makes it harder for browser authors to write correct implementations and some tag misplacement.
+	*Finally, omitting the tags may give the complexity. 	
+
+
+Execution of the code:
+typeof(1)
+"number"
+typeof(1.1)
+"number"
+typeof('1.1')
+"string"
+typeof(true)
+"boolean"
+typeof(null)
+"object"
+typeof(undefined)
+"undefined"
+typeof([])
+"object"
+typeof({})
+"object"
+typeof(NaN)
+"number"
