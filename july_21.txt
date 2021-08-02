@@ -1,0 +1,91 @@
+1)Iteration using FOR,FOR OF, FOR IN, FOREACH:
+
+for loop:
+  var obj = [
+          { person: "Name 1", age: "2", company: "GUVI" },
+          { person: "Name 2", age: "5", company: "GUVI geek" },
+          { person: "Name 3", age: "8", company: "GUVI geek network" },
+        ]
+        
+        for( var i=0;i<obj.length;i++)
+        {
+            console.log(obj[i]);
+        }
+
+
+
+for of:
+   var obj = [
+          { person: "Name 1", age: "2", company: "GUVI" },
+          { person: "Name 2", age: "5", company: "GUVI geek" },
+          { person: "Name 3", age: "8", company: "GUVI geek network" },
+        ]
+    
+        for (const property of obj)
+        {
+        console.log(property);
+        }  
+
+
+for in:
+   var obj = [
+          { person: "Name 1", age: "2", company: "GUVI" },
+          { person: "Name 2", age: "5", company: "GUVI geek" },
+          { person: "Name 3", age: "8", company: "GUVI geek network" },
+        ]
+    
+    for (const prop in obj)
+    {
+    console.log(obj[prop]);
+    }
+
+
+for each:
+   var obj = [
+          { person: "Name 1", age: "2", company: "GUVI" },
+          { person: "Name 2", age: "5", company: "GUVI geek" },
+          { person: "Name 3", age: "8", company: "GUVI geek network" },
+        ]
+    
+    obj.forEach(element => console.log(element));
+
+2)RESUME:
+
+var resume =[
+    {"CareerObjective":"Keen positive thinker and enthusiastic individual looking for a key position in a reputed organization,where I could exploit my past education & experience to develop, contribute and lead company for optimum growth and development"},
+
+    {"Contact":[{"Name":"S.P.Abinaya"},{"Email":"abipalani0610@gmail.com"},{"Mobile":9876543210}]},
+
+    {"Qualification":"M.E.,CSE"},
+
+    {"TechnicalSkills":[{"Languages":["C","C++","JAVA","HTML"]},
+        {"Courses":["DCA","ADJP"]},
+        {"OperatingSystem":["Windows","Unix"]},
+        {"DBMS":["MSAccess","Oracle","MySQL"]}]},
+
+    {"Acheivements":["A University Rank Holder in my master studies",
+        "Participated in National conference on Technology Innovation in Computer Engineering",
+        "Participated in Two Days Training Programmed on Leadership Development",
+        "Organized by Indian Society for Technical Education",
+        "Participated in Rotary Youth Leadership Awards camp",
+        "Won Second Price in Movie Making"]},
+    
+    {"Projects":["FEC Decoding using BP algorithm in WLANs for six months",
+        "An Efficient Cost Optimization in Cloud Computing based on Weighted Round Robin Scheduling for 1year"]},
+    
+    {"PersonalInformation":[{"DOB":"06 October 1993"},
+        {"Sex":"Female"},
+        {"Nationality":"Indian"},
+        {"MaritalStatus":"Single"},
+        {"Father’sName":"Mr S.Palani"},
+        {"ContactNumber":+918870699423},
+        {"LanguagesKnown":["Tamil","English","Hindi"]}]}
+        
+]
+console.log(JSON.stringify(resume));
+
+
+3)READ:
+	Window object is the root object,it ia at the top level.Each window has its own global object, it has its own property such as setTimeout(),setInterval()and so on.
+	Document object is in the window oject, that window object has this document.It deals with the HTML file in the global object.
+	Screen object is also in the window object, which deals with the properties describing the physical display.
